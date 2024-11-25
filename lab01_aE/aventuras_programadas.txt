@@ -1,0 +1,4 @@
+3
+05/12/2023, 09:00, Excursion a la montaña Rusa, Juan Perez, 3, Cancelada
+06/12/2023, 14:30, Ruta en Bicicleta por el Bosque, Laura Gomez, 2, Cancelada
+08/12/2023, 10:15, Senderismo en las Montañas, Carlos Rodriguez, 5, Programada
