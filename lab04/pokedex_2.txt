@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct pokemon {
+  char* nombre;
+  int numero;
+  int nivel_poder;
+  char* tipo;
+} pokemon;
+
+pokemon crear_pokemon(pokemon nuevo_pokemon) {
+   nuevo_pokemon.nombre = (char*)malloc(sizeof(char)*35);
+    printf("\nIngrese nombre del pokemon: ");
+    scanf("%s", nuevo_pokemon.nombre);//No se agrega & ya que es una direccion de memoria
+    printf("\nIngrese  numero del pokemon: ");
+    scanf("%d", &nuevo_pokemon.numero);
+    printf("\nIngrese  nivel de poder: ");
+    scanf("%d", &nuevo_pokemon.nivel_poder);
+    nuevo_pokemon.tipo = (char*)malloc(sizeof(char)*35);
+    printf("\nIngrese  tipo: ");
+    scanf("%s", nuevo_pokemon.tipo);
+
+    return nuevo_pokemon;
+}
+
+pokemon * agregar_pokemon(pokemon * old_pokedex, int * n, pokemon nuevo_pokemon) {
+  int i;
+  pokemon * nuevo_pokedex = (pokemon*)malloc(sizeof(pokemon)*(*n + 1));
+  for (i = 0; i < *n; i++){
+    nuevo_pokedex[i] = old_pokedex[i];
+  }
+  nuevo_pokedex[*n] = nuevo_pokemon;
+  *n = *n + 1;
+  free(old_pokedex);
+
+  return nuevo_pokedex;
+}
+
+int main () {
+  //Cambiar por append.  
+  int n = 0;
+  int opcion;
+
+  pokemon* arreglo_pokemon = (pokemon*)malloc(sizeof(pokemon)*n);
+  
+  do {
+    printf("\nBienvenido a la pokedex!: \n");
+    printf("Opciones \n");
+    printf("1. Agregar un Pokemon: \n");
+    printf("2. Buscar por numero: \n");
+    printf("3. Liberar pokemon. \n"); //Es c/ append pero eliminando el pokemon i
+    printf("4. Mostrar todos los pokemon. \n");
+    printf("5. Buscar el pokemon de mayor nivel. \n");
+    printf("6. Cerrar el programa \n");
+    printf("\nIngrese opcion: ");
+    scanf("%d", &opcion);
+    
+    switch(opcion) {
+      case 1:
+        pokemon nuevo_pokemon;
+        nuevo_pokemon = crear_pokemon(nuevo_pokemon);
+        arreglo_pokemon = agregar_pokemon(arreglo_pokemon, &n, nuevo_pokemon);
+        n++;
+        break;
+      case 2:
+        break;
+      case 3:
+        break;
+      case 4:
+        for (int i = 0; i < n; ++i) {
+          printf("Nombre del pokemon: %s\n", arreglo_pokemon[i].nombre);
+          printf("Numero del pokemon: %d \n", &arreglo_pokemon[i].numero);
+          printf("Nivel de poder del pokemon: %d \n", &arreglo_pokemon[i].nivel_poder);
+          printf("Tipo del pokemon: %s\n", arreglo_pokemon[i].tipo);
+          printf("-------------------- o --------------------\n");
+        }
+        break;
+      case 5:
+        break;
+      case 6:
+        break;
+      default:
+        printf("\nOpcion no valida!\n");
+    }
+    printf("\n");
+    
+  } while(opcion != 6);
+    
+  return 0;
+}

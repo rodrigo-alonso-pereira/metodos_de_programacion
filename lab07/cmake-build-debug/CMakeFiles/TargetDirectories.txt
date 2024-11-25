@@ -1,0 +1,4 @@
+/home/rodrigo/Documents/metodos_de_programacion/lab07/cmake-build-debug/CMakeFiles/BEE_Bidones.dir
+/home/rodrigo/Documents/metodos_de_programacion/lab07/cmake-build-debug/CMakeFiles/bidones.dir
+/home/rodrigo/Documents/metodos_de_programacion/lab07/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rodrigo/Documents/metodos_de_programacion/lab07/cmake-build-debug/CMakeFiles/rebuild_cache.dir

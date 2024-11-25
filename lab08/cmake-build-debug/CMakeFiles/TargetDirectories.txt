@@ -1,0 +1,3 @@
+/home/rodrigo/Documents/metodos_de_programacion/lab08/cmake-build-debug/CMakeFiles/busquedaEspacioSoluciones.dir
+/home/rodrigo/Documents/metodos_de_programacion/lab08/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rodrigo/Documents/metodos_de_programacion/lab08/cmake-build-debug/CMakeFiles/rebuild_cache.dir

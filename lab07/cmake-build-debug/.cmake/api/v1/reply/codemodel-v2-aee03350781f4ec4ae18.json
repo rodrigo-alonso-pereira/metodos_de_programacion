@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lab07",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BEE_Bidones::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BEE_Bidones-Debug-fd584a9e8d2fd9c4da7e.json",
+					"name" : "BEE_Bidones",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bidones::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bidones-Debug-755b785fc37d1bf6a9bc.json",
+					"name" : "bidones",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rodrigo/Documents/metodos_de_programacion/lab07/cmake-build-debug",
+		"source" : "/home/rodrigo/Documents/metodos_de_programacion/lab07"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
